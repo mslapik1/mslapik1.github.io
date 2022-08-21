@@ -140,7 +140,7 @@ p, ul {
 }
 
 .standfirst {
-  font-size: 70px;
+  font-size: 35px;
   line-height: 26px;
   -webkit-font-smoothing: antialiased;
   margin-bottom: 0px;
@@ -261,7 +261,7 @@ div .pub-info {
 
 
 #timeline {
-  font-size: large;
+  font-size: 25;
   font-weight: 300;
 }
 @media (min-width: 768px) {
@@ -316,17 +316,17 @@ div .pub-info {
 }
 
 .tdate {
-  font-size: large;
+  font-size: 25;
   font-weight: 300;
   margin-bottom: 0px;
   color: rgb(65,105,225);
 }
 .ttitle {
-  font-size: large;
+  font-size: 25;
   font-weight: 300;
 }
 .tdesc {
-  font-size: medium;
+  font-size: 20;
   font-weight: 300;
 }
 @media (max-width: 768px) {
