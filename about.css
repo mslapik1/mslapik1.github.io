@@ -179,6 +179,7 @@ p, ul {
   text-transform:none;
   line-height: 120%;
   font-weight: 300;
+   color: rgb(65,105,225);
 }
 .pub ul {
   list-style-type: none;
