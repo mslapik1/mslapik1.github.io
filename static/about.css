@@ -114,7 +114,8 @@ body {
 .lightblue { color:#C7E1E3; }
 /*, #nav a, .static-nav a*/
 /* .white, a.current { color:#fff !important; } */
-.offwhite { color:#eee; }
+/*.offwhite { color:#eee; }*/
+.offwhite { color:#FFFFFF; }
 .brown { color:#3D3226; }
 
 a {
