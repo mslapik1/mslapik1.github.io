@@ -90,14 +90,14 @@ p.align-right {
 body {
   /*font-family: 'Roboto', sans-serif;*/
   color:#000000;
-  font-size:12px;
+  font-size:15px;
   line-height:18px;
   margin: 0 auto;
 }
 
 h1 { 
   /*font-family: 'Roboto', sans-serif;*/
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 300;
   line-height: 74px;
   letter-spacing:-3px;
@@ -108,7 +108,7 @@ h1 {
 }
 
 h2 { 
-  font-size: 32px;
+  font-size: 35px;
   line-height: 30px;
   margin-bottom:0.4em;
   -webkit-font-smoothing: antialiased;
@@ -116,7 +116,7 @@ h2 {
 }
 
 h3 { 
-  font-size: 36px;
+  font-size: 40px;
   line-height: 36px;
   margin-bottom:0.6em;
   -webkit-font-smoothing: antialiased;
