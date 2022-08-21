@@ -255,13 +255,13 @@ div .pub-info {
 
 
 .intro {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 
 
 #timeline {
-  font-size: 15;
+  font-size: 20;
   font-weight: 300;
 }
 @media (min-width: 768px) {
@@ -316,17 +316,17 @@ div .pub-info {
 }
 
 .tdate {
-  font-size: 15;
+  font-size: 20;
   font-weight: 300;
   margin-bottom: 0px;
   color: rgb(65,105,225);
 }
 .ttitle {
-  font-size: 15;
+  font-size: 20;
   font-weight: 300;
 }
 .tdesc {
-  font-size: 15;
+  font-size: 20;
   font-weight: 300;
 }
 @media (max-width: 768px) {
