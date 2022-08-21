@@ -181,7 +181,7 @@ li {
 .quote {
   color: #777;
   text-align: center;
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   padding: 90px 0 50px;
 }
