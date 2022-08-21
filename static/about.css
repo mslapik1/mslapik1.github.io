@@ -213,7 +213,7 @@ p, ul {
 }
 
 .intro {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 21px;
   -webkit-font-smoothing: antialiased;
   padding: 0px;
@@ -224,7 +224,7 @@ p, ul {
 }
 
 .intronav {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 24px;  
   -webkit-font-smoothing: antialiased;
 }
