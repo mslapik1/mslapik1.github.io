@@ -65,7 +65,7 @@ table {
 
 @font-face {
     font-family: 'Roboto', sans-serif;
-    font-weight: normal;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -314,13 +314,13 @@ div .pub-info {
 
 .tdate {
   font-size: large;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 0px;
   color: rgb(0,0,105);
 }
 .ttitle {
   font-size: large;
-  font-weight: 400;
+  font-weight: 300;
 }
 .tdesc {
   font-size: medium;
