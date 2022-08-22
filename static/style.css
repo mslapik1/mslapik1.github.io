@@ -154,7 +154,7 @@ li {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: -5px;
-  color: rgb(132,0,0);
+  color: rgb(65,105,225);
 }
 .ttitle {
   font-size: 20px;
@@ -236,7 +236,7 @@ hr.soft {
 }
 .puba {
   font-size: 18px;
-  color: #900;
+  color: rgb(65,105,225);
 }
 .pubv {
   color: #090;
