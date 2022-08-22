@@ -180,7 +180,7 @@ p, ul {
   text-transform:none;
   line-height: 120%;
   font-weight: 300;
-   color: rgb(100, 149, 237);
+   color: rgb(52, 102, 170);
 }
 .pub ul {
   list-style-type: none;
@@ -319,7 +319,7 @@ div .pub-info {
   font-size: 18;
   font-weight: 300;
   margin-bottom: 0px;
-  color: rgb(100, 149, 237);
+  color: rgb(152, 102, 170);
 }
 .ttitle {
   font-size: 20;
