@@ -295,7 +295,7 @@ div .pub-info {
 }
 
 .timelineitem:before {
-  width: 11px;
+  width: 5px;
   height: 11px;
   background: #333;
   content: "";
