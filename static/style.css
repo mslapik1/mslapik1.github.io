@@ -100,23 +100,27 @@ li {
 #timeline {
   font-size: 16px;
   font-weight: 300;
+  line-height: 120%;
 }
 @media (min-width: 768px) {
   .timelineitem:nth-child(odd) {
     margin-left: 50%;
     border-left: 5px solid #333;
     text-align: left;
+    line-height: 120%;
   }
   .timelineitem:nth-child(even) {
     margin-right: 50%;
     margin-left: 5px;
     border-right: 5px solid #333;
     text-align: right;
+    line-height: 120%;
   }
   .timelineitem {
     width: 50%;
     position: relative;
     padding: 0px 10px 0px 10px;
+    line-height: 120%;
   }
   .timelineitem:nth-child(odd):before {
    left: -8px;
