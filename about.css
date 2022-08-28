@@ -295,7 +295,7 @@ div .pub-info {
 }
 
 .timelineitem:before {
-  width: 5px;
+  width: 11px;
   height: 11px;
   background: #333;
   content: "";
@@ -345,6 +345,7 @@ div .pub-info {
 }
 .thigh {
   color: #070;
+  width: 5px;
 }
 .quote {
   color: #777;
