@@ -675,6 +675,7 @@ div .pub-full {
 @media (min-width: 768px) {
   .timelineitem:nth-child(odd) {
     left: 12.5px;
+    line-height: 18px;
     margin-left: 50%;
     border-left: 5px solid #333;
     text-align: left;
@@ -683,12 +684,14 @@ div .pub-full {
     left: -12.5px;
     margin-right: 50%;
     margin-left: 5px;
+    line-height: 18px;
     border-right: 5px solid #333;
     text-align: right;
   }
   .timelineitem {
     width: 50%;
     position: relative;
+    line-height: 18px;
     padding: 0px 10px 0px 10px;
   }
   .timelineitem:nth-child(odd):before {
