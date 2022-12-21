@@ -22,7 +22,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0;
+  margin: 0 auto;
+  
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -258,6 +259,8 @@ div .pub-info {
   padding-bottom: 20px;
 }
 
+.desktopview{ display:block;}
+.mblview{ display:none;}
 
 .intro {
   font-size: 20px;
@@ -280,6 +283,9 @@ div .pub-info {
      line-height:18px;
 	 font-family: 'Open Sans', sans-serif;
   }
+  
+ 
+
   .timelineitem:nth-child(even) {
     left: -12.5px;
     margin-right: 50%;
@@ -348,17 +354,25 @@ div .pub-info {
 }
 @media (max-width: 768px) {
   .tdate {
-    font-size: 16px;
+    font-size: 20px;
+	line-height:150% !important;
   }
   .ttitle {
-    font-size: 16px;
+    font-size: 20px;
+	line-height:150% !important;
   }
   .tdesc {
-    font-size: 16px;
+    font-size: 20px;
+	line-height:150% !important;
   }
   
   .onlyMble{ display:block; padding-bottom:20px; margin-left:40% !important; padding-top:5px; }
+  
+  
   .pub-image{display:none;}
+  .headshot{ display:none;}
+.mblview{ display:block;}
+.mblmdl{ padding-left:50px !important;}
   
   .standfirst h2{
   font-size: 30px !important;
@@ -366,12 +380,12 @@ div .pub-info {
    font-weight:bold;
 }
 .intro {
-  font-size: 15px !important;
-  line-height:150% !important;
+  font-size: 20px !important;
+  
 }
 
 .pub {
-  font-size: 15px !important;
+  font-size: 22px !important;
   line-height:150% !important;
 }
 
