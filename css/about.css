@@ -22,7 +22,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin: 0 auto;
+  margin: 0;
   
   padding: 0;
   border: 0;
@@ -335,6 +335,7 @@ div .pub-info {
     left: -8px;
   }
   #container h4{ margin-top:-30px;}
+  .mblmdl { width:100% !important; margin-left: 41% !important; }
   
 }
 
@@ -355,24 +356,21 @@ div .pub-info {
 @media (max-width: 768px) {
   .tdate {
     font-size: 20px;
-	line-height:150% !important;
   }
   .ttitle {
     font-size: 20px;
-	line-height:150% !important;
   }
   .tdesc {
     font-size: 20px;
-	line-height:150% !important;
   }
   
-  .onlyMble{ display:block; padding-bottom:20px; margin-left:40% !important; padding-top:5px; }
+  .onlyMble{ display:block; padding-bottom:20px; margin-left:41% !important; padding-top:5px; }
   
   
   .pub-image{display:none;}
   .headshot{ display:none;}
 .mblview{ display:block;}
-.mblmdl{ padding-left:50px !important;}
+
   
   .standfirst h2{
   font-size: 30px !important;
