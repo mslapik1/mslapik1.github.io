@@ -139,7 +139,7 @@ p, footer, div.table-wrapper, .MJXc-display { width: 55%; }
 
 div.table-wrapper, table { overflow-x: auto; }
 
-@media screen and (max-width: 760px) { p, footer { width: 100%; } pre code { width: 87.5%; } ul { width: 85%; } figure { max-width: 90%; } figcaption, figure.fullwidth figcaption { margin-right: 0%; max-width: none; } blockquote p, blockquote footer, div.epigraph > blockquote > footer, .MJXc-display { width: 80%; padding-left: 5%; padding-right: 5%; } }
+@media screen and (max-width: 760px) { p, footer { width: 100%; } pre code { width: 87.5%; } ul { width: 100%; } figure { max-width: 90%; } figcaption, figure.fullwidth figcaption { margin-right: 0%; max-width: none; } blockquote p, blockquote footer, div.epigraph > blockquote > footer, .MJXc-display { width: 80%; padding-left: 5%; padding-right: 5%; } }
 
 .marginnote code, .sidenote code { font-size: 1rem; }
 
