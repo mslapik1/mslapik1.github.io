@@ -27,7 +27,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: ' IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   /*font: bistream vera sans;*/
 }
 
@@ -38,10 +38,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 150%;
-font-family: ' IBM Plex Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
   font-weight: 300 !important;
   background-color:#FFF !important;
-  font-family: ' IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 ol, ul {
@@ -56,7 +56,7 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-family: ' IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
  
   margin:0 auto;
 }
@@ -75,7 +75,7 @@ body {
   min-height:100%;
   /*max-width: 900px;*/
   width: 100%;
-  font-family: ' IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -265,7 +265,7 @@ div .pub-info {
 .intro {
   font-size: 20px;
   line-height:190%;
-  font-family: ' IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -283,7 +283,7 @@ div .pub-info {
 			border-left: 5px solid #333;
 			text-align: left;
 			 line-height:20px;
-			 font-family: ' IBM Plex Sans', sans-serif;
+			 font-family: 'Open Sans', sans-serif;
 		  }
 		  
 		 
@@ -295,14 +295,14 @@ div .pub-info {
 			border-right: 5px solid #333;
 			text-align: right;
 			 line-height:20px;
-			 font-family: ' IBM Plex Sans', sans-serif;
+			 font-family: 'Open Sans', sans-serif;
 		  }
 		  .timelineitem {
 			width: 50%;
 			position: relative;
 			padding: 0px 10px 0px 10px;
 			 line-height:20px;
-			 font-family: ' IBM Plex Sans', sans-serif;
+			 font-family: 'Open Sans', sans-serif;
 		  }
 		  .timelineitem:nth-child(odd):before {
 		   left: -8px;
@@ -390,7 +390,7 @@ div .pub-info {
 		  .onlyMble{ display:block; padding-bottom:20px; padding-top:5px; padding-left:31%;padding-top: 30px!important; }
 		  
       .pub li img{padding-top: 30px!important;}
-		  header > nav.group, body footer { width: 100%; text-align:left !important;color:#000000; font-weight:400; font-family: ' IBM Plex Sans', sans-serif; font-size:25px;}
+		  header > nav.group, body footer { width: 100%; text-align:left !important;color:#000000; font-weight:400; font-family: 'Open Sans', sans-serif; font-size:25px;}
 	
 		  
 		  .pub-image{display:none;}
