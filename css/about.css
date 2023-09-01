@@ -154,7 +154,7 @@ p, ul {
 .headshot {
   display:table-cell;
   vertical-align:top;
-  max-width: 175px;
+  max-width: 250px;
   padding: 10px;
   margin-right:10px;
 }
