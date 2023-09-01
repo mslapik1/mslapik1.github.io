@@ -29,8 +29,6 @@ time, mark, audio, video {
   font-size: 100%;
   font-family: 'Open Sans', sans-serif;
 
-   width: 100%;
-   max-width: 1000px;
   /*font: bistream vera sans;*/
 }
 
@@ -160,6 +158,8 @@ p, ul {
   max-width: 175px;
   padding: 10px;
   margin-right:10px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 /* Layout */
