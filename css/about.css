@@ -28,6 +28,9 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font-family: 'Open Sans', sans-serif;
+
+   width: 100%;
+   max-width: 1000px;
   /*font: bistream vera sans;*/
 }
 
