@@ -1,74 +1,64 @@
-
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
-  <link rel="stylesheet" type="text/css" href="css/about.css" media="all">
-  <!-- <link rel="stylesheet" type="text/css" href="./tufte.css" media="all" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIF Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
 
-  <title>About Mitchell B. Slapik</title>
-  <!-- developed by https://www.fiverr.com/email_design  /> -->
-  <meta name="description" content="Mitchell Slapik MD-PhD Candidate McGovern Medical School ">
-  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
-  <link rel="stylesheet" type="text/css" href="css/css-tufte.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
 
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .column {
+            flex: 48%;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
 </head>
+<body>
+    <header>
+        <h1>GIF Gallery</h1>
+    </header>
 
-<body class="full-width">
-
-  <header>
-    <!-- <nav class="group" style="padding-top: 30px;padding-bottom: 15px; color:#3466aa; font-weight:400; font-family: 'Open Sans', sans-serif; font-size:25px; text-align:left;"> About</nav>  -->
-    <!-- <span style="font-size:30px; line-height:32px; color:rgb(52, 102, 170); " class="hash"> </span>  -->
-    <br>
-    <hr style="color:#000000; ">
-  </header>
-
-  <article>
-
-
-    <!-- set title / toggle blog vs not blog -->
-
-    <div id="container" style="text-decoration: none; padding-top: 30px;">
-      <div style="display:table;" class="mblmdl">
-        <div class="headshot">
-
-          <br>
-          <span style="font-size: 20px;">MD/PhD Candidate & NIH Fellow</span><br>
-          <div style="font-size:20px"> McGovern Medical School </div>
-          <div style="font-size:20px"><a style="color:black; text-decoration:underline" href="https://mitchellslapik.github.io/slapik | cv.pdf">CV</a> | <a style="color:black; text-decoration:underline" href="https://scholar.google.com/citations?user=2Y5HWYsAAAAJ&amp;hl=en">Google Scholar</a></div>
-          <br>
-          <img src="images/headshot.jpeg" style="width:100%; max-width:250px; margin-left: 30px;" class="mblview">
-
+    <div class="gallery">
+        <div class="column">
+            <img src="path/to/your/gif1.gif" alt="GIF 1">
+            <div class="caption">Caption for GIF 1</div>
         </div>
-      </div>
-
+        <div class="column">
+            <img src="path/to/your/gif2.gif" alt="GIF 2">
+            <div class="caption">Caption for GIF 2</div>
+        </div>
+        <!-- Add more columns as needed -->
     </div>
-   
-    <span style="font-size:30px; line-height:32px; " class="hash">Visuals</span>
-    <hr style="color:#000000; ">
-    <br>
-
-    <div class="tweets">
-      <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Dynamical system 1: single point attractor. Here we have a simple neural circuit that always gravitates back to a single, stable point. By injecting current into neuron 1, we can shift the location of this stable point. <a href="https://t.co/Q62gJLawHx">pic.twitter.com/Q62gJLawHx</a></p>&mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1726098559110648251?ref_src=twsrc%5Etfw">November 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">According to <a href="https://twitter.com/StefanoFusi2?ref_src=twsrc%5Etfw">@StefanoFusi2</a>, the brain uses high-dimensional representations to encode information. More dimensions allow for more possible decision boundaries, giving the brain flexibility for any potential task. <a href="https://t.co/JC3HyS7Z7S">pic.twitter.com/JC3HyS7Z7S</a></p>&mdash; Mitchell Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1700545481703588263?ref_src=twsrc%5Etfw">September 9, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
-    
-
-  <footer>
-    <!--<hr class="slender">-->
-    <hr style="color:#000000; ">
-
-    <br>
-    <br>
-  </footer>
 </body>
-
 </html>
