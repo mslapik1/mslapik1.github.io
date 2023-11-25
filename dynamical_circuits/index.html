@@ -18,17 +18,19 @@
         header {
             text-align: center;
             padding: 20px;
-            background-color: #fff; /* Updated background color to white */
+            background-color: #fff;
             color: #000;
-            border-bottom: 1px solid #000; /* Black line at the bottom */
+            border-bottom: 1px solid #000;
         }
 
         h1 {
-            font-weight: normal; /* Removed bold for the title */
+            font-weight: normal;
+            margin: 0; /* Remove margin for h1 */
         }
 
         main {
             display: flex;
+            flex-wrap: wrap; /* Allow columns to wrap to the next line on small screens */
             justify-content: space-between;
             padding: 20px;
         }
@@ -37,10 +39,12 @@
             flex: 1;
             margin: 0 10px;
             text-align: center;
+            max-width: 500px; /* Set max-width for columns */
+            box-sizing: border-box;
         }
 
         img {
-            max-width: 500px;
+            max-width: 100%; /* Make images responsive */
             height: auto;
             display: block;
             margin: 0 auto;
@@ -49,28 +53,24 @@
         .caption {
             text-align: center;
             margin-top: 10px;
-            max-width: 500px; /* Set max-width for captions */
         }
 
         strong {
-            font-weight: bold; /* Bold for Figure label */
+            font-weight: bold;
         }
 
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #fff; /* White background for footer */
+            background-color: #fff;
             color: #000;
-            border-top: 1px solid #000; /* Black line at the top */
+            border-top: 1px solid #000;
         }
 
         @media (max-width: 600px) {
-            main {
-                flex-direction: column;
-            }
-
             .column {
-                margin: 0;
+                flex: 0 0 100%; /* Allow columns to take full width on small screens */
+                margin: 0 0 20px; /* Add margin between columns on small screens */
             }
         }
     </style>
@@ -101,7 +101,7 @@
             <p class="caption"><strong>Figure 2:</strong> multistable attractor. This circuit naturally gravitates back to one of 3 stable points. By injecting current, we can get it to switch from one stable point to another. This could explain how the same group of neurons can store multiple memories.</p>
             <img src="bistable_attractor.gif" alt="Figure 4">
             <p class="caption"><strong>Figure 4:</strong> Dynamical system 4: This circuit naturally gravitates back to one of 2 stable points. By injecting current, we can switch it from one stable point to another. This process could explain bistable optical illusions, which switch between two opposing percepts.</p>
-            <img src="oscillator.gif" alt="Figure 4">
+            <img src="oscillator.gif" alt="Figure 6">
             <p class="caption"><strong>Figure 6:</strong> Dynamical system 6: oscillator. This circuit naturally oscillates back and forth. By electrically inhibiting neuron 1, we can kill the oscillation and inactivate both neurons. Oscillators are fundamental to generating movements and may underlie many other operations in the brain.</p>
             <img src="chaotic_system.gif" alt="Figure 8">
             <p class="caption"><strong>Figure 8:</strong> Dynamical system 8: chaotic system. Here, neurons 1 and 2 spiral outward. At a certain threshold, neuron 3 turns on and kills the oscillation, restarting the spiral. Chaotic dynamics like this may characterize your brain as it is still learning a new task.</p>
@@ -109,7 +109,6 @@
     </main>
 
     <footer>
-        <p>© 2023 Your Name. All rights reserved.</p>
     </footer>
 </body>
 
