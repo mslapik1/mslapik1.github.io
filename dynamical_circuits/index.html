@@ -25,25 +25,25 @@
 
         h1 {
             font-weight: normal;
-            margin: 0; /* Remove margin for h1 */
+            margin: 0;
         }
 
         main {
             display: flex;
-            justify-content: space-between;
+            justify-content: center; /* Center the columns */
             padding: 20px;
         }
 
         .column {
             flex: 1;
-            margin: 0 5px; /* Reduced margin to bring columns closer */
+            margin: 0 5px;
             text-align: center;
-            max-width: 500px; /* Set max-width for columns */
+            max-width: 500px;
             box-sizing: border-box;
         }
 
         img {
-            max-width: 100%; /* Make images responsive */
+            max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
@@ -67,14 +67,14 @@
         }
 
         a {
-            text-decoration: none; /* Remove underline from text hyperlinks */
-            color: inherit; /* Inherit text color */
+            text-decoration: none;
+            color: blue; /* Set text color to blue */
         }
 
         @media (max-width: 600px) {
             .column {
-                flex: 0 0 100%; /* Allow columns to take full width on small screens */
-                margin: 0 0 20px; /* Add margin between columns on small screens */
+                flex: 0 0 100%;
+                margin: 0 0 20px;
             }
         }
     </style>
@@ -99,6 +99,7 @@
             <p class="caption"><strong>Figure 7:</strong> two oscillators. This circuit can produce two different oscillations, one fast and one slow. By injecting current, we can get it to switch from one oscillation to the other.</p>
             <img src="heteroclinic_orbit.gif" alt="Figure 9">
             <p class="caption"><strong>Figure 9:</strong> Dynamical system 9: heteroclinic orbit. Heteroclinic orbits pass through multiple semi-stable states without fully coming to rest. They may create sequences that underlie memories and decision making.</p>
+       
         </div>
         <div class="column">
             <img src="multistable_attractor.gif" alt="Figure 2">
@@ -109,6 +110,7 @@
             <p class="caption"><strong>Figure 6:</strong> Dynamical system 6: oscillator. This circuit naturally oscillates back and forth. By electrically inhibiting neuron 1, we can kill the oscillation and inactivate both neurons. Oscillators are fundamental to generating movements and may underlie many other operations in the brain.</p>
             <img src="chaotic_system.gif" alt="Figure 8">
             <p class="caption"><strong>Figure 8:</strong> Dynamical system 8: chaotic system. Here, neurons 1 and 2 spiral outward. At a certain threshold, neuron 3 turns on and kills the oscillation, restarting the spiral. Chaotic dynamics like this may characterize your brain as it is still learning a new task.</p>
+       
         </div>
     </main>
 
@@ -119,3 +121,4 @@
 </body>
 
 </html>
+
