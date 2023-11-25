@@ -78,6 +78,17 @@
                 text-align: left; /* Align text to the left */
             }
         }
+
+        @media (min-width: 601px) {
+            main {
+                flex-wrap: wrap; /* Allow columns to wrap on larger screens */
+            }
+
+            .column {
+                flex: 0 0 calc(50% - 50px); /* Two columns, subtracting margin */
+                margin: 0 25px 20px; /* Increase the margin between columns and add bottom margin */
+            }
+        }
     </style>
 </head>
 
@@ -121,4 +132,4 @@
     </footer>
 </body>
 
-</html>
+
