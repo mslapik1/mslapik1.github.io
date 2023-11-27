@@ -392,7 +392,7 @@ div .pub-info {
 		  .onlyMble{ display:block; padding-bottom:20px; padding-top:5px; padding-left:31%;padding-top: 30px!important; }
 		  
       .pub li img{padding-top: 30px!important;}
-		  header > nav.group, body footer { width: 100%; text-align:left !important;color:#000000; font-weight:400; font-family: 'Open Sans', sans-serif; font-size:25px;}
+		  header > nav.group, body footer { width: 100%; text-align:left !important;color:#000000; text-decoration:none; font-weight:400; font-family: 'Open Sans', sans-serif; font-size:25px;}
 	
 		  
 		  .pub-image{display:none;}
