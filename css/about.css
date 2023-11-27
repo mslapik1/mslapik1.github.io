@@ -46,6 +46,10 @@ font-family: 'Open Sans', sans-serif;
 text-decoration:none;
 }
 
+a {
+  text-decoration: none; /* Add this line to remove underline from links */
+}
+
 ol, ul {
   list-style: none;
 }
@@ -100,7 +104,9 @@ body {
   
 }
 
-
+a {
+  text-decoration: none; /* Add this line to remove underline from links */
+}
 
 h1 { 
   /*font-family: 'Roboto', sans-serif;*/
