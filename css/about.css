@@ -46,9 +46,6 @@ font-family: 'Open Sans', sans-serif;
 text-decoration:none;
 }
 
-a {
-  text-decoration: none; /* Add this line to remove underline from links */
-}
 
 ol, ul {
   list-style: none;
@@ -84,9 +81,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-a {
-  text-decoration: none; /* Add this line to remove underline from links */
-}
 
 p.align-right {
   width:100%;
@@ -104,9 +98,6 @@ body {
   
 }
 
-a {
-  text-decoration: none; /* Add this line to remove underline from links */
-}
 
 h1 { 
   /*font-family: 'Roboto', sans-serif;*/
