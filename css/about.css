@@ -427,6 +427,7 @@ div .pub-info {
   font-style: normal;
   font-weight: 300;
   padding: 90px 0 50px;
+  text-decoration:none;
 }
 
 .music {
