@@ -268,6 +268,8 @@ div .pub-info {
   font-size: 20px;
   line-height:190%;
   font-family: 'Open Sans', sans-serif;
+   text-decoration:none;
+
 }
 
 
@@ -427,7 +429,6 @@ div .pub-info {
   font-style: normal;
   font-weight: 300;
   padding: 90px 0 50px;
-  text-decoration:none;
 }
 
 .music {
