@@ -38,7 +38,8 @@ html { text-align: baseline; font-size: 11px; -webkit-font-smoothing: antialiase
 
 .mjx-math { font-size: 1.3rem; }
 
-a { color: #a00000; text-decoration: none; }
+a { color: #a00000;}
+
 a {
   text-decoration: none;
 }
