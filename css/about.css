@@ -187,6 +187,8 @@ max-width: 800px; /* Adjust this value as needed */
 /* publication list */
 .pub {
   font-size:16px;
+text-align: justify;
+  text-justify: inter-word;
 }
 .pub h3 {
   font-size:20px;
@@ -195,9 +197,13 @@ max-width: 800px; /* Adjust this value as needed */
   line-height: 120%;
   font-weight: 300;
    color: rgb(52, 102, 170);
+text-align: justify;
+  text-justify: inter-word;
 }
 .pub ul {
   list-style-type: none;
+text-align: justify;
+  text-justify: inter-word;
 }
 
 .pub li img {
@@ -207,6 +213,8 @@ max-width: 800px; /* Adjust this value as needed */
  
 .pub li p {
   text-align: left;
+text-align: justify;
+  text-justify: inter-word;
 }
  
 .pub li {
