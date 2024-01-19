@@ -28,7 +28,9 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font-family: 'Open Sans', sans-serif;
-
+max-width: 800px; /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto;
   /*font: bistream vera sans;*/
 }
 
@@ -43,6 +45,9 @@ font-family: 'Open Sans', sans-serif;
   font-weight: 300 !important;
   background-color:#FFF !important;
   font-family: 'Open Sans', sans-serif;
+	max-width: 800px; /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a{text-decoration: none;}
