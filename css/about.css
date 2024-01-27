@@ -456,7 +456,7 @@ color: rgb(52, 102, 170);
 /*        justify-content: space-between;*/
     }
     .tweets .twitter-tweet.twitter-tweet-rendered {
-        margin-top: 30px!important;
+        margin-top: 0px!important;
     justify-content: center;
     align-items: center;    }
 }
