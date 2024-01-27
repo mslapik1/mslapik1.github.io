@@ -446,7 +446,7 @@ color: rgb(52, 102, 170);
 .music {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 0px;
 }
 
 @media (min-width: 1024px){
