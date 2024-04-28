@@ -42,7 +42,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 125%;
 font-family: 'Aptos', sans-serif;
-  font-weight: 400 !important;
+  font-weight: 300 !important;
   background-color:#FFF !important;
   font-family: 'Aptos', sans-serif;
 }
@@ -107,7 +107,7 @@ body {
 h1 { 
   /*font-family: 'Roboto', sans-serif;*/
   font-size: 35px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 74px;
   margin-left:-0px;
   margin-top: 5px;
@@ -122,7 +122,7 @@ h2 {
   margin-bottom:0.4em;
    font-style:normal;
   -webkit-font-smoothing: antialiased;
-  font-weight:400;
+  font-weight:300;
 }
 
 h3 { 
@@ -130,7 +130,7 @@ h3 {
   line-height: 36px;
   margin-bottom:0.6em;
   -webkit-font-smoothing: antialiased;
-  font-weight:400;
+  font-weight:300;
   width:80%;
 }
 
@@ -193,7 +193,7 @@ max-width: 800px; /* Adjust this value as needed */
   width: 100%;
   text-transform:none;
   line-height: 120%;
-  font-weight: 400;
+  font-weight: 300;
    color: rgb(52, 102, 170);
 }
 .pub ul {
@@ -286,7 +286,7 @@ div .pub-info {
 #timeline {
   font-size: 20
 	  ;
-  font-weight: 400;
+  font-weight: 300;
 }
 @media (min-width: 768px) 
 	{
@@ -370,20 +370,20 @@ div .pub-info {
 
 .tdate {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 0px;
   line-height:26px;
   color:#000000;
 }
 .ttitle {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   line-height:26px;
 color: rgb(52, 102, 170);
 }
 .tdesc {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   line-height:26px;
 }
 @media (max-width: 768px) 
@@ -404,7 +404,7 @@ color: rgb(52, 102, 170);
 		  .onlyMble{ display:block; padding-bottom:20px; padding-top:5px; padding-left:31%;padding-top: 30px!important; }
 		  
       .pub li img{padding-top: 30px!important;}
-		  header > nav.group, body footer { width: 100%; text-align:left !important;color:#000000; font-weight:400; font-family: 'Aptos', sans-serif; font-size:20px;}
+		  header > nav.group, body footer { width: 100%; text-align:left !important;color:#000000; font-weight:300; font-family: 'Aptos', sans-serif; font-size:20px;}
 	
 		  
 		  .pub-image{display:none;}
@@ -439,7 +439,7 @@ color: rgb(52, 102, 170);
   color: #777;
   text-align: center;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   padding: 90px 0 50px;
 }
 
