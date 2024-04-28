@@ -6,7 +6,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aptoss&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,7 +27,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Aptos', sans-serif;
 	max-width: 800px; /* Adjust this value as needed */
     margin-left: auto;
     margin-right: auto;
@@ -41,10 +41,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 125%;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Aptos', sans-serif;
   font-weight: 300 !important;
   background-color:#FFF !important;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Aptos', sans-serif;
 }
 
 a{text-decoration: none;}
@@ -61,7 +61,7 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Aptos', sans-serif;
  
   margin:0 auto;
 	max-width: 800px; /* Adjust this value as needed */
@@ -83,7 +83,7 @@ body {
   min-height:100%;
   /*max-width: 900px;*/
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Aptos', sans-serif;
 }
 
 
@@ -278,7 +278,7 @@ div .pub-info {
 .intro {
   font-size: 20px;
   line-height:190%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Aptos', sans-serif;
 }
 
 
@@ -296,7 +296,7 @@ div .pub-info {
 			border-left: 5px solid #333;
 			text-align: left;
 			 line-height:20px;
-			 font-family: 'Open Sans', sans-serif;
+			 font-family: 'Aptos', sans-serif;
 		  }
 		  
 		 
@@ -308,14 +308,14 @@ div .pub-info {
 			border-right: 5px solid #333;
 			text-align: right;
 			 line-height:20px;
-			 font-family: 'Open Sans', sans-serif;
+			 font-family: 'Aptos', sans-serif;
 		  }
 		  .timelineitem {
 			width: 50%;
 			position: relative;
 			padding: 0px 10px 0px 10px;
 			 line-height:20px;
-			 font-family: 'Open Sans', sans-serif;
+			 font-family: 'Aptos', sans-serif;
 		  }
 		  .timelineitem:nth-child(odd):before {
 		   left: -8px;
@@ -404,7 +404,7 @@ color: rgb(52, 102, 170);
 		  .onlyMble{ display:block; padding-bottom:20px; padding-top:5px; padding-left:31%;padding-top: 30px!important; }
 		  
       .pub li img{padding-top: 30px!important;}
-		  header > nav.group, body footer { width: 100%; text-align:left !important;color:#000000; font-weight:400; font-family: 'Open Sans', sans-serif; font-size:20px;}
+		  header > nav.group, body footer { width: 100%; text-align:left !important;color:#000000; font-weight:400; font-family: 'Aptos', sans-serif; font-size:20px;}
 	
 		  
 		  .pub-image{display:none;}
