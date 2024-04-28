@@ -74,7 +74,7 @@ table {
 .standfirst h2{
   font-size: 40px !important;
   line-height: 44px !important;
-   font-weight:bold !important;
+   font-weight:500 !important;
 }
 
 /* general classes */
@@ -416,7 +416,7 @@ color: rgb(52, 102, 170);
 		  .standfirst h2{
 		  font-size: 30px !important;
 		  line-height: 36px !important;
-		   font-weight:bold;
+		   font-weight:500;
 		}
 		.intro {
 		  font-size: 20px !important;	
