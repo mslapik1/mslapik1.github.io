@@ -304,12 +304,10 @@ p, ul {
     margin: 0 auto; /* Center the image within the container */
   }
 
-  .name-and-title {
-    text-align: center;
-  }
-
-  .name-and-title h4 {
-    margin-bottom: 10px;
+  .mblmdl > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   center {
