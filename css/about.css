@@ -292,6 +292,9 @@ p, ul {
     text-align: center !important;
     margin: 0 auto !important;
     margin-top: -50px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .headshot {
