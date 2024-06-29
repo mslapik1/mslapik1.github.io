@@ -318,10 +318,10 @@ div .pub-info {
 			 font-family: 'Aptos', sans-serif;
 		  }
 		  .timelineitem:nth-child(odd):before {
-		   left: -8px;
+		   left: -4px;
 		  }
 		  .timelineitem:nth-child(even):before {
-			right: -8px;
+			right: -4px;
 		  }
 		  
 		  .hash{text-align: center !important;} 
@@ -330,8 +330,8 @@ div .pub-info {
 	}
 
 .timelineitem:before {
-  width: 11px;
-  height: 11px;
+  width: 8px;
+  height: 8px;
   background: #333;
   content: "";
   display: block;
