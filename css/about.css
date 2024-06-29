@@ -318,10 +318,10 @@ div .pub-info {
 			 font-family: 'Aptos', sans-serif;
 		  }
 		  .timelineitem:nth-child(odd):before {
-		   left: -4px;
+		   left: -6px;
 		  }
 		  .timelineitem:nth-child(even):before {
-			right: -4px;
+			right: -6px;
 		  }
 		  
 		  .hash{text-align: center !important;} 
