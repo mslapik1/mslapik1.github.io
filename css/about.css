@@ -293,7 +293,7 @@ div .pub-info {
 		  .timelineitem:nth-child(odd) {
 			left: 12.5px;
 			margin-left: 50%;
-			border-left: 2px solid #333;
+			border-left: 2px solid #333 !important;
 			text-align: left;
 			 line-height:20px;
 			 font-family: 'Aptos', sans-serif;
@@ -305,7 +305,7 @@ div .pub-info {
 			left: -12.5px;
 			margin-right: 50%;
 			margin-left: 5px;
-			border-right: 2px solid #333;
+			border-right: 2px solid #333 !important;
 			text-align: right;
 			 line-height:20px;
 			 font-family: 'Aptos', sans-serif;
