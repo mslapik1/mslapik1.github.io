@@ -133,19 +133,19 @@
 
 <body class="full-width">
 
-  <header onclick="toggleMenu()">
+  <header>
     <div class="menu">
-      <div class="menu-icon">&#9776;</div>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
       <a href="#intro">Intro</a>
       <a href="#publications">Publications</a>
       <a href="#visualizations">Visualizations</a>
       <a href="#music">Music</a>
     </div>
     <div class="dropdown-menu" id="dropdownMenu">
-      <a href="#intro" onclick="toggleMenu()">Intro</a>
-      <a href="#publications" onclick="toggleMenu()">Publications</a>
-      <a href="#visualizations" onclick="toggleMenu()">Visualizations</a>
-      <a href="#music" onclick="toggleMenu()">Music</a>
+      <a href="#intro" onclick="closeMenu()">Intro</a>
+      <a href="#publications" onclick="closeMenu()">Publications</a>
+      <a href="#visualizations" onclick="closeMenu()">Visualizations</a>
+      <a href="#music" onclick="closeMenu()">Music</a>
     </div>
   </header>
 
@@ -344,6 +344,12 @@
         menu.style.maxHeight = menu.scrollHeight + "px";
         menu.classList.add('open');
       }
+    }
+
+    function closeMenu() {
+      var menu = document.getElementById('dropdownMenu');
+      menu.style.maxHeight = null;
+      setTimeout(() => menu.classList.remove('open'), 500); // Wait for the animation to complete before removing the class
     }
 
     // Custom smooth scroll for mobile
