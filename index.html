@@ -108,6 +108,8 @@
 
       .menu-icon {
         display: block;
+        width: 100%;
+        text-align: center;
       }
 
       .dropdown-menu {
@@ -115,15 +117,20 @@
         position: relative;
         border-bottom: 1px solid #000000;
       }
+
+      .dropdown-menu a {
+        width: 100%;
+        padding: 10px 0;
+      }
     }
   </style>
 </head>
 
 <body class="full-width">
 
-  <header>
+  <header onclick="toggleMenu()">
     <div class="menu">
-      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <div class="menu-icon">&#9776;</div>
       <a href="#intro">Intro</a>
       <a href="#publications">Publications</a>
       <a href="#visualizations">Visualizations</a>
@@ -136,7 +143,6 @@
       <a href="#music" onclick="toggleMenu()">Music</a>
     </div>
   </header>
-  <hr style="color:#000000;">
 
   <article>
     <!-- set title / toggle blog vs not blog -->
@@ -299,8 +305,7 @@
       <div class="tweets">
         <blockquote class="twitter-tweet">
           <p lang="en" dir="ltr">Check out our live performance at the World-Famous <a href="https://twitter.com/RandRStudioLive?ref_src=twsrc%5Etfw">@RandRStudioLive</a>, available here: <a href="https://t.co/TdgeB09lTG">https://t.co/TdgeB09lTG</a> <a href="https://t.co/xTnfvkaqg2">pic.twitter.com/xTnfvkaqg2</a></p>
-          &mdash; The Chirp Chirps (@TheChirpChirps) <a href="https://twitter.com/TheChirpChirps/status/1660347862041985025?ref_src=twsrc%5Etfw">May 21, 2023</a>
-        </blockquote>
+          &mdash; The Chirp Chirps (@TheChirpChirps) <a href="https://twitter.com/TheChirpChirps/status/1660347862041985025?ref_src=twsrc%5Etfw">May 21, 2023</a></blockquote>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <br>
       </div>
