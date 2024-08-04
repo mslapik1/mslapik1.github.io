@@ -84,7 +84,8 @@
       border-top: none;
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.5s ease-in-out;
+      transition: max-height 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
+      border-bottom: 1px solid transparent;
     }
 
     .dropdown-menu a {
@@ -101,7 +102,7 @@
     }
 
     .dropdown-menu.open {
-      border-bottom: 1px solid #000000;
+      border-bottom-color: #000000;
     }
 
     @media (max-width: 768px) {
@@ -335,7 +336,7 @@
       var menu = document.getElementById('dropdownMenu');
       if (menu.style.maxHeight) {
         menu.style.maxHeight = null;
-        menu.classList.remove('open');
+        setTimeout(() => menu.classList.remove('open'), 500); // Wait for the animation to complete before removing the class
       } else {
         menu.style.maxHeight = menu.scrollHeight + "px";
         menu.classList.add('open');
