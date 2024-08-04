@@ -339,7 +339,7 @@
       var menu = document.getElementById('dropdownMenu');
       if (menu.style.maxHeight) {
         menu.style.maxHeight = null;
-        setTimeout(() => menu.classList.remove('open'), 500); // Wait for the animation to complete before removing the class
+        menu.classList.remove('open');
       } else {
         menu.style.maxHeight = menu.scrollHeight + "px";
         menu.classList.add('open');
@@ -349,7 +349,7 @@
     function closeMenu() {
       var menu = document.getElementById('dropdownMenu');
       menu.style.maxHeight = null;
-      setTimeout(() => menu.classList.remove('open'), 500); // Wait for the animation to complete before removing the class
+      menu.classList.remove('open');
     }
 
     function scrollToSection(id) {
@@ -358,7 +358,7 @@
         document.querySelector(id).scrollIntoView({
           behavior: 'smooth'
         });
-      }, 500); // Adjust this delay as needed
+      }, 50); // Adjust this delay as needed
     }
   </script>
 </body>
