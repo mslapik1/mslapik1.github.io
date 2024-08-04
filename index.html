@@ -127,17 +127,6 @@
       .dropdown-menu {
         display: flex;
       }
-
-      /* Make scroll slower on mobile */
-      html {
-        scroll-behavior: smooth;
-        scroll-snap-type: y mandatory;
-      }
-
-      body {
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-      }
     }
   </style>
 </head>
@@ -357,14 +346,13 @@
       }
     }
 
-    // Slow scroll for mobile
+    // Custom smooth scroll for mobile
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+          behavior: 'smooth'
         });
       });
     });
