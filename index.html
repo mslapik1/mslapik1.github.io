@@ -353,7 +353,7 @@
     }
 
     function scrollToSection(id) {
-      var menuHeight = 0
+      var menuHeight = document.querySelector('.menu').offsetHeight;
       closeMenu();
       setTimeout(() => {
         const element = document.querySelector(id);
