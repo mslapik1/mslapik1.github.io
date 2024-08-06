@@ -6,13 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
   <link rel="stylesheet" type="text/css" href="css/about.css" media="all">
+  <!-- <link rel="stylesheet" type="text/css" href="./tufte.css" media="all" /> -->
 
   <title>About Mitchell B. Slapik</title>
-
+  <!-- developed by https://www.fiverr.com/email_design  /> -->
   <meta name="description" content="Mitchell Slapik MD/PhD Candidate McGovern Medical School">
   <meta name="keywords" content="Mitchell Slapik, MD/PhD Candidate, Neuroscience, McGovern Medical School">
   <meta name="author" content="Mitchell Slapik">
-
+  
+  <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
   <link rel="stylesheet" type="text/css" href="css/css-tufte.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,31 +26,31 @@
       scroll-behavior: smooth;
     }
 
-    /* General styles */
-    body {
-      font-family: 'Aptos', sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
+    /* Add margin-bottom to create space below the Spotify widget */
+    .music-container {
       display: flex;
       justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
+    /* Optional: If you want to add space above the footer */
+    footer {
+      margin-top: 20px; /* Adjust this margin as needed */
+    }
+
+    /* Optional: If you want to limit the width of the container */
+    .music-container iframe {
+      max-width: 100%;
+    }
+
+    /* Add this style rule to remove underlines from hyperlinks */
     a {
       text-decoration: none;
-      color: rgb(52, 102, 170);
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
+    /* Menu styles */
     .menu {
       display: flex;
       justify-content: center;
@@ -58,15 +60,20 @@
       top: 0;
       z-index: 1000;
       border-bottom: 1px solid #000000;
-      width: 100%;
     }
 
     .menu a {
       margin: 0 15px;
       font-size: 18px;
       color: black;
+      text-decoration: none;
     }
 
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile menu styles */
     .menu-icon {
       display: none;
       cursor: pointer;
@@ -88,8 +95,13 @@
       margin: 5px 0;
       font-size: 18px;
       color: black;
+      text-decoration: none;
       text-align: center;
       padding: 10px 0;
+    }
+
+    .dropdown-menu a:hover {
+      text-decoration: underline;
     }
 
     .dropdown-menu.open {
@@ -115,88 +127,11 @@
       .dropdown-menu {
         display: flex;
       }
-
-      .headshot img {
-        width: 100%;
-        max-width: 150px;
-        margin: auto;
-      }
-    }
-
-    .headshot img {
-      width: 100%;
-      max-width: 250px;
-      border-radius: 50%;
-    }
-
-    .intro {
-      font-size: 20px;
-      padding-top: 10px;
-    }
-
-    .timelineitem {
-      margin-bottom: 20px;
-    }
-
-    .tdate {
-      font-weight: bold;
-    }
-
-    .ttitle {
-      font-size: 20px;
-      font-weight: 500;
-    }
-
-    .tdesc {
-      font-size: 18px;
-    }
-
-    .pub {
-      margin: 20px 0;
-    }
-
-    .pub h3 {
-      font-size: 22px;
-      margin: 0;
-    }
-
-    .pub-info {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .pub-image {
-      max-width: 100%;
-      height: auto;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px 0;
-      background-color: #f8f8f8;
-      margin-top: 20px;
-    }
-
-    .social img {
-      width: 32px;
-      height: 32px;
-    }
-
-    .music-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-    }
-
-    .tweets {
-      margin-top: 20px;
     }
   </style>
 </head>
 
-<body>
+<body class="full-width">
 
   <header>
     <div class="menu">
@@ -214,148 +149,190 @@
     </div>
   </header>
 
-  <div class="container">
-    <article>
-      <div id="intro" style="padding-top: 30px;">
-        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center;">
-          <div class="headshot">
-            <img src="images/headshot.jpeg" alt="Headshot of Mitchell B. Slapik">
-          </div>
-          <div style="margin-top: 50px; text-align: center;">
-            <h4 style="font-size: 35px; line-height: 40px; font-weight: 500;">Mitchell B. Slapik</h4><br>
-            <span style="font-size: 20px;">MD/PhD Candidate & NIH Fellow</span><br>
-            <div style="font-size: 20px;">McGovern Medical School</div>
-            <div style="font-size: 20px;"><a href="https://mitchellslapik.github.io/slapik | cv.pdf">CV</a> | <a href="https://scholar.google.com/citations?user=2Y5HWYsAAAAJ&amp;hl=en">Google Scholar</a></div>
-          </div>
-        </div>
-        <p class="intro">I am fascinated by how the brain intricately processes information. I studied this as a philosophy major at <a href="https://www.swarthmore.edu/">Swarthmore College</a>, as a research assistant at <a href="https://www.jhu.edu/">Johns Hopkins University</a>, and as an MD/PhD student at <a href="https://med.uth.edu/">McGovern Medical School</a>. During this time, I have been supported by the <a href="https://www.nih.gov/">National Institutes of Health</a> through a <a href="https://researchtraining.nih.gov/programs/fellowships/F30">National Research Service Award</a> and a <a href="https://gsbs.uth.edu/ccts-tl1/">Translational and Clinical Science Predoctoral Fellowship</a>. Ultimately, I plan to leverage computational neuroscience to better understand and treat psychiatric disorders.</p>
-      </div>
+  <article>
+    <!-- set title / toggle blog vs not blog -->
 
-      <div id="timeline" style="padding-top: 20px;">
-        <h2>Timeline</h2>
-        <div class="timelineitem">
-          <div class="tdate">2027</div>
-          <a class="ttitle" href="https://med.uth.edu/">McGovern Medical School</a>
-          <div class="tdesc">MD</div>
+    <div id="intro" style="text-decoration: none; padding-top: 30px;">
+      <div style="display:table;" class="mblmdl">
+        <div class="headshot">
+          <img src="images/headshot.jpeg" style="width:100%; max-width:250px;" alt="Headshot of Mitchell B. Slapik">
         </div>
-        <div class="timelineitem">
-          <div class="tdate">2025</div>
-          <a class="ttitle" href="https://gsbs.uth.edu/">Graduate School of Biomedical Sciences</a>
-          <div class="tdesc">PhD, Neuroscience</div>
-        </div>
-        <div class="timelineitem">
-          <div class="tdate">2016</div>
-          <a class="ttitle" href="https://www.jhu.edu/">Johns Hopkins University</a>
-          <div class="tdesc">Post-Baccalaureate Premedical Program</div>
-        </div>
-        <div class="timelineitem">
-          <div class="tdate">2014</div>
-          <a class="ttitle" href="https://www.swarthmore.edu/">Swarthmore College</a>
-          <div class="tdesc">BA with High Honors, Philosophy</div>
-        </div>
-        <div class="timelineitem">
-          <div class="tdate">2013</div>
-          <a class="ttitle" href="https://www.ox.ac.uk/">University of Oxford</a>
-          <div class="tdesc">Study Abroad, Philosophy of Mind</div>
+        <div style="margin-top:50px;">
+          <h4 style="font-size:35px; line-height:40px; font-weight:500; ">Mitchell B. Slapik </h4><br>
+          
+          <span style="font-size: 20px;">MD/PhD Candidate & NIH Fellow</span><br>
+          <div style="font-size:20px">McGovern Medical School</div>
+          <div style="font-size:20px"><a style="color: rgb(52, 102, 170); text-decoration:none;" href="https://mitchellslapik.github.io/slapik | cv.pdf">CV</a> | <a style="color:rgb(52, 102, 170); text-decoration:none;" href="https://scholar.google.com/citations?user=2Y5HWYsAAAAJ&amp;hl=en">Google Scholar</a></div>
+          <br>
+          <img src="images/headshot.jpeg" style="width:100%; max-width:300px; margin-left: 30px;" class="mblview" alt="Headshot of Mitchell B. Slapik">
         </div>
       </div>
 
-      <div id="publications" style="padding-top: 20px;">
-        <h2>Publications</h2>
-        <ul class="pub">
-          <li>
-            <img src="images/quality.png" class="pub-image" alt="Quality of Life Changes Following the Onset of Cerebellar Ataxia">
+      <p></p>
+
+      <p class="intro" style="padding-top: 10px; text-decoration: none;"> I am fascinated by how the brain intricately processes information. I studied this as a philosophy major at <a style="color:rgb(52, 102, 170);" href="https://www.swarthmore.edu/">Swarthmore College</a>, as a research assistant at <a style="color:rgb(52, 102, 170);" href="https://www.jhu.edu/">Johns Hopkins University</a> and as an MD/PhD student at <a style="color:rgb(52, 102, 170);" href="https://med.uth.edu/">McGovern Medical School</a>. 
+        During this time, I have been supported by the <a style="color:rgb(52, 102, 170);" href="https://www.nih.gov/">National Institutes of Health</a> through a <a style="color:rgb(52, 102, 170);" href="https://researchtraining.nih.gov/programs/fellowships/F30">National Research Service Award</a> and a <a style="color:rgb(52, 102, 170);" href="https://gsbs.uth.edu/ccts-tl1/">Translational and Clinical Science Predoctoral Fellowship</a>.
+        Ultimately, I plan to leverage computational neuroscience to better understand and treat psychiatric disorders.
+        <br>
+        </p>
+    </div>
+
+    <!-- Timeline section -->
+    <div class="container" style="padding-top: 20px; padding-bottom: 60px; font-size:20px line-height:110" id="timeline">
+      <div class="timelineitem">
+        <div class="tdate" style="line-height:110%">2027</div>
+        <a class="ttitle" href="https://med.uth.edu/" style="line-height:110%; font-weight:500">McGovern Medical School</a>
+        <div class="tdesc" style="font-size:20px; line-height:110%">MD</div>
+      </div>
+      <div class="timelineitem">
+        <div class="tdate" style="line-height:110%">2025</div>
+        <a class="ttitle" href="https://gsbs.uth.edu/" style="line-height:110%; font-weight:500">Graduate School of Biomedical Sciences</a>
+        <div class="tdesc" style="font-size:20px; line-height:110%">PhD, <span class="thigh">Neuroscience</span></div>
+        <!-- <div class="tdesc" style="font-size:20px; line-height:110%">Advisor: Valentin Dragoi</div> -->
+      </div>
+      <div class="timelineitem">
+        <div class="tdate" style="line-height:110%">2016</div>
+        <a class="ttitle" href="https://www.jhu.edu/" style="line-height:110%; font-weight:500">Johns Hopkins University</a>
+        <div class="tdesc" style="font-size:20px; line-height:110%">Post-Baccalaureate Premedical Program </div>
+        <!-- <div class="tdesc" style="font-size:20px; line-height:110%">Advisor: Cherie Marvel </div> -->
+      </div>
+      <div class="timelineitem">
+        <div class="tdate" style="line-height:110%">2014</div>
+        <a class="ttitle" href="https://www.swarthmore.edu/" style="line-height:110%; font-weight:500">Swarthmore College</a>
+        <div class="tdesc" style="font-size:20px; line-height:110%">BA with High Honors, <span class="thigh">Philosophy</span></div>
+      </div>
+      <div class="timelineitem">
+        <div class="tdate" style="line-height:110%">2013</div>
+        <a class="ttitle" href="https://www.ox.ac.uk/" style="line-height:110%; font-weight:500">University of Oxford</a>
+        <div class="tdesc" style="font-size:20px; line-height:110%">Study Abroad, <span class="thigh">Philosophy of Mind</span></div>
+      </div>
+    </div>
+
+    <!-- Publications section -->
+    <div id="publications">
+      <span style="font-size:30px; line-height:32px; " class="hash">Publications</span>
+      <hr style="color:#000000; ">
+
+      <div class="pub">
+        <ul>
+          <li> <img src="images/quality.png" class="pub-image" alt="Quality of Life Changes Following the Onset of Cerebellar Ataxia">
             <div class="pub-info">
-              <h3><a href="https://link.springer.com/article/10.1007/s12311-022-01393-5">Quality of Life Changes Following the Onset of Cerebellar Ataxia</a></h3>
-              <a href="https://link.springer.com/article/10.1007/s12311-022-01393-5">Michelle Joyce, Prianca Nadkarni, [...], Mitchell Slapik et al.<br><i>The Cerebellum, 2022</i></a>
+              <h3><a style="font-style:normal; font-weight:500; color:rgb(52, 102, 170)" href="https://link.springer.com/article/10.1007/s12311-022-01393-5">Quality of Life Changes Following the Onset of Cerebellar Ataxia</a></h3>
+              <a style="font-size:20px; color:black;" href="https://link.springer.com/article/10.1007/s12311-022-01393-5"> Michelle Joyce, Prianca Nadkarni, [...], <b style="font-weight: 400;">Mitchell Slapik</b> et al.<br>
+                <i>The Cerebellum, 2022</i><br>
+                <img src="images/quality.png" class="onlyMble" width="130" height="auto" alt="Quality of Life Changes Following the Onset of Cerebellar Ataxia">
+              </a>
             </div>
           </li>
-          <li>
-            <img src="images/implicit.png" class="pub-image" alt="The Cerebellum and Implicit Sequencing: Evidence from Cerebellar Ataxia">
+          <li> <img src="images/implicit.png" class="pub-image" alt="The Cerebellum and Implicit Sequencing: Evidence from Cerebellar Ataxia">
             <div class="pub-info">
-              <h3><a href="https://link.springer.com/article/10.1007/s12311-020-01206-7">The Cerebellum and Implicit Sequencing: Evidence from Cerebellar Ataxia</a></h3>
-              <a href="https://link.springer.com/article/10.1007/s12311-020-01206-7">Owen Morgan, Mitchell Slapik, Sharif Kronemer et al.<br><i>The Cerebellum, 2021</i></a>
+              <h3><a style="font-style:normal; font-weight:500; color:rgb(52, 102, 170)" href="https://link.springer.com/article/10.1007/s12311-020-01206-7">The Cerebellum and Implicit Sequencing: Evidence from Cerebellar Ataxia</a></h3>
+              <a style="font-size:20px; color:black;" href="https://link.springer.com/article/10.1007/s12311-020-01206-7"> Owen Morgan, <b style="font-weight: 400;">Mitchell Slapik</b>, Sharif Kronemer et al.<br>
+                <i>The Cerebellum, 2021</i><br>
+                <img src="images/implicit.png" class="onlyMble" width="130" height="auto" alt="The Cerebellum and Implicit Sequencing: Evidence from Cerebellar Ataxia">
+              </a>
             </div>
           </li>
-          <li>
-            <img src="images/neuropsych.png" class="pub-image" alt="Neuropsychiatric Symptoms as a Reliable Phenomenology of Cerebellar Ataxia">
+          <li> <img src="images/neuropsych.png" class="pub-image" alt="Neuropsychiatric Symptoms as a Reliable Phenomenology of Cerebellar Ataxia">
             <div class="pub-info">
-              <h3><a href="https://link.springer.com/article/10.1007/s12311-020-01195-7">Neuropsychiatric Symptoms as a Reliable Phenomenology of Cerebellar Ataxia</a></h3>
-              <a href="https://link.springer.com/article/10.1007/s12311-020-01195-7">Sharif Kronemer, Mitchell Slapik, Jessica Pietrowski et al.<br><i>The Cerebellum, 2021</i></a>
+              <h3><a style="font-style:normal; font-weight:500; color:rgb(52, 102, 170)" href="https://link.springer.com/article/10.1007/s12311-020-01195-7">Neuropsychiatric Symptoms as a Reliable Phenomenology of Cerebellar Ataxia</a></h3>
+              <a style="font-size:20px; color:black;" href="https://link.springer.com/article/10.1007/s12311-020-01195-7"> Sharif Kronemer, <b style="font-weight: 400;">Mitchell Slapik</b>, Jessica Pietrowski et al.<br>
+                <i>The Cerebellum, 2021</i><br>
+                <img src="images/neuropsych.png" class="onlyMble" width="130" height="auto" alt="Neuropsychiatric Symptoms as a Reliable Phenomenology of Cerebellar Ataxia">
+              </a>
             </div>
           </li>
-          <li>
-            <img src="images/visuospatial.jpeg" class="pub-image" alt="Visuospatial Organization and Recall in Cerebellar Ataxia">
+          <li> <img src="images/visuospatial.jpeg" class="pub-image" alt="Visuospatial Organization and Recall in Cerebellar Ataxia">
             <div class="pub-info">
-              <h3><a href="https://link.springer.com/article/10.1007/s12311-018-0948-z">Visuospatial Organization and Recall in Cerebellar Ataxia</a></h3>
-              <a href="https://link.springer.com/article/10.1007/s12311-018-0948-z">Mitchell Slapik, Sharif Kronemer, Owen Morgan et al.<br><i>The Cerebellum, 2019</i></a>
+              <h3> <a style="font-style:normal; font-weight:500; color:rgb(52, 102, 170)" href="https://link.springer.com/article/10.1007/s12311-018-0948-z">Visuospatial Organization and Recall in Cerebellar Ataxia</a></h3>
+              <a style="font-size:20px; color:black;" href="https://link.springer.com/article/10.1007/s12311-018-0948-z"> <b style="font-weight: 400;">Mitchell Slapik</b>, Sharif Kronemer, Owen Morgan et al.<br>
+                <i>The Cerebellum, 2019</i><br>
+                <img src="images/visuospatial.jpeg" class="onlyMble" width="130" height="auto" alt="Visuospatial Organization and Recall in Cerebellar Ataxia">
+              </a>
             </div>
           </li>
         </ul>
+        <!-- end publication list! -->
       </div>
+    </div>
 
-      <div id="visualizations" style="padding-top: 20px;">
-        <h2>Visualizations</h2>
-        <div class="tweets">
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">I have created a website for my visuals of dynamical motifs! These provide a nice introduction to dynamical systems in the context of neuroscience. Also thank you to Dr. Paul Miller for giving me permission to animate his figures. <a href="https://t.co/HoR7wpwSjy">https://t.co/HoR7wpwSjy</a> <a href="https://t.co/dh8z05Ocy3">pic.twitter.com/dh8z05Ocy3</a></p>&mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1729318711184539787?ref_src=twsrc%5Etfw">November 28, 2023</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">Communication subspaces enable the brain to selectively send different signals to different brain regions. Here, neuron 3 computes the sum of neurons 1 and 2, whereas neuron 4 computes their difference. In this way, neurons 3 and 4 can trace out completely independent patterns. <a href="https://t.co/9iz9nsiEoS">pic.twitter.com/9iz9nsiEoS</a></p>&mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1744142687966478567?ref_src=twsrc%5Etfw">January 7, 2024</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">A 1995 Science paper showed that outfielders don't run in a straight line to catch a flyball. Instead, they run so that the ball appears to make a straight line in the sky. This simple strategy ensures that they end up in the right location without requiring any complex math. <a href="https://t.co/1CkO8UXPbT">pic.twitter.com/1CkO8UXPbT</a></p>&mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1813031547580350524?ref_src=twsrc%5Etfw">July 16, 2024</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">The traditional model of working memory proposes 5 to 9 slots, but does not explain how these slots can interact. In 2015, Matthey et al. created a beautiful model of working memory that correctly reproduces the kinds of memory interference we see in real-life experiments. <a href="https://t.co/GhPSCqRTAe">pic.twitter.com/GhPSCqRTAe</a></p>&mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1814142629493325954?ref_src=twsrc%5Etfw">July 19, 2024</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">According to the gating hypothesis, only relevant sensory information reaches PFC. In contrast, Mante et al. proposes that relevant and irrelevant information both arrive in PFC, but recurrent computations bring out the relevant information and map it to the appropriate response. <a href="https://t.co/0Kdm565ICZ">pic.twitter.com/0Kdm565ICZ</a></p>&mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1816258734672220517?ref_src=twsrc%5Etfw">July 24, 2024</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">According to <a href="https://twitter.com/StefanoFusi2?ref_src=twsrc%5Etfw">@StefanoFusi2</a>, the brain uses high-dimensional representations to encode information. More dimensions allow for more possible decision boundaries, giving the brain flexibility for any potential task. <a href="https://t.co/JC3HyS7Z7S">pic.twitter.com/JC3HyS7Z7S</a></p>&mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1700545481703588263?ref_src=twsrc%5Etfw">September 9, 2023</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-      </div>
+    <!-- Visualizations section -->
+    <div id="visualizations">
+      <span style="font-size:30px; line-height:32px; " class="hash">Visualizations</span>
+      <hr style="color:#000000; ">
+      <br>
 
-      <div id="music" style="padding-top: 20px;">
-        <h2>Music</h2>
-        <div class="music-container">
-          <iframe style="border-radius: 12px" src="https://open.spotify.com/embed/album/6KdzEUEBoN6nJVFHIMqw7b?utm_source=generator" width="550" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        <div class="tweets">
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">Check out our live performance at the World-Famous <a href="https://twitter.com/RandRStudioLive?ref_src=twsrc%5Etfw">@RandRStudioLive</a>, available here: <a href="https://t.co/TdgeB09lTG">https://t.co/TdgeB09lTG</a> <a href="https://t.co/xTnfvkaqg2">pic.twitter.com/xTnfvkaqg2</a></p>&mdash; The Chirp Chirps (@TheChirpChirps) <a href="https://twitter.com/TheChirpChirps/status/1660347862041985025?ref_src=twsrc%5Etfw">May 21, 2023</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">Thanks everyone for coming out to our reunion show last week at Valhalla! The Chirp Chirps are Back! <a href="https://t.co/fLK5ZmCl9v">pic.twitter.com/fLK5ZmCl9v</a></p>&mdash; The Chirp Chirps (@TheChirpChirps) <a href="https://twitter.com/TheChirpChirps/status/1725333888560517512?ref_src=twsrc%5Etfw">November 17, 2023</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+      <div class="tweets">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">I have created a website for my visuals of dynamical motifs! These provide a nice introduction to dynamical systems in the context of neuroscience. Also thank you to Dr. Paul Miller for giving me permission to animate his figures. <a href="https://t.co/HoR7wpwSjy">https://t.co/HoR7wpwSjy</a> <a href="https://t.co/dh8z05Ocy3">pic.twitter.com/dh8z05Ocy3</a></p>
+          &mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1729318711184539787?ref_src=twsrc%5Etfw">November 28, 2023</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">Communication subspaces enable the brain to selectively send different signals to different brain regions. Here, neuron 3 computes the sum of neurons 1 and 2, whereas neuron 4 computes their difference. In this way, neurons 3 and 4 can trace out completely independent patterns. <a href="https://t.co/9iz9nsiEoS">pic.twitter.com/9iz9nsiEoS</a></p>
+          &mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1744142687966478567?ref_src=twsrc%5Etfw">January 7, 2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">A 1995 Science paper showed that outfielders don't run in a straight line to catch a flyball. Instead, they run so that the ball appears to make a straight line in the sky. This simple strategy ensures that they end up in the right location without requiring any complex math. <a href="https://t.co/1CkO8UXPbT">pic.twitter.com/1CkO8UXPbT</a></p>
+          &mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1813031547580350524?ref_src=twsrc%5Etfw">July 16, 2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">The traditional model of working memory proposes 5 to 9 slots, but does not explain how these slots can interact. In 2015, Matthey et al. created a beautiful model of working memory that correctly reproduces the kinds of memory interference we see in real-life experiments. <a href="https://t.co/GhPSCqRTAe">pic.twitter.com/GhPSCqRTAe</a></p>
+          &mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1814142629493325954?ref_src=twsrc%5Etfw">July 19, 2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">According to the gating hypothesis, only relevant sensory information reaches PFC. In contrast, Mante et al. proposes that relevant and irrelevant information both arrive in PFC, but recurrent computations bring out the relevant information and map it to the appropriate response. <a href="https://t.co/0Kdm565ICZ">pic.twitter.com/0Kdm565ICZ</a></p>
+          &mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1816258734672220517?ref_src=twsrc%5Etfw">July 24, 2024</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">According to <a href="https://twitter.com/StefanoFusi2?ref_src=twsrc%5Etfw">@StefanoFusi2</a>, the brain uses high-dimensional representations to encode information. More dimensions allow for more possible decision boundaries, giving the brain flexibility for any potential task. <a href="https://t.co/JC3HyS7Z7S">pic.twitter.com/JC3HyS7Z7S</a></p>
+          &mdash; Mitchell B. Slapik (@mslapik) <a href="https://twitter.com/mslapik/status/1700545481703588263?ref_src=twsrc%5Etfw">September 9, 2023</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
-    </article>
-  </div>
+      <br>
+    </div>
+
+    <!-- Music section -->
+    <div id="music">
+      <span style="font-size:30px; line-height:32px; ">Music</span> <br>
+      <hr style="color:#000000; ">
+      <br>
+      
+      <div class="music-container">
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/6KdzEUEBoN6nJVFHIMqw7b?utm_source=generator" width="550" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="tweets">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">Check out our live performance at the World-Famous <a href="https://twitter.com/RandRStudioLive?ref_src=twsrc%5Etfw">@RandRStudioLive</a>, available here: <a href="https://t.co/TdgeB09lTG">https://t.co/TdgeB09lTG</a> <a href="https://t.co/xTnfvkaqg2">pic.twitter.com/xTnfvkaqg2</a></p>
+          &mdash; The Chirp Chirps (@TheChirpChirps) <a href="https://twitter.com/TheChirpChirps/status/1660347862041985025?ref_src=twsrc%5Etfw">May 21, 2023</a></blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Thanks everyone for coming out to our reunion show last week at Valhalla! The Chirp Chirps are Back! <a href="https://t.co/fLK5ZmCl9v">pic.twitter.com/fLK5ZmCl9v</a></p>&mdash; The Chirp Chirps (@TheChirpChirps) <a href="https://twitter.com/TheChirpChirps/status/1725333888560517512?ref_src=twsrc%5Etfw">November 17, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <br>
+      </div>
+      <br>
+    </div>
+  </article>
 
   <footer>
-    <hr style="color: #000000;">
+    <hr style="color:#000000;">
     <table border="0" cellspacing="0" cellpadding="0" align="center" class="social">
       <tr>
-        <td><a href="mailto:mslapik@gmail.com" target="_blank"><img src="images/email.png" alt="Email"></a></td>
+        <td><a href="mailto:mslapik@gmail.com" target="_blank"><img src="images/email.png" style="width:32px; height:32px;" alt="Email"></a></td>
         <td width="10">&nbsp;</td>
-        <td><a href="https://twitter.com/mslapik" target="_blank"><img src="images/twitter.png" alt="Twitter"></a></td>
+        <td><a href="https://twitter.com/mslapik" target="_blank"><img src="images/twitter.png" style="width:32px; height:32px;" alt="Twitter"></a></td>
         <td width="10">&nbsp;</td>
-        <td><a href="https://scholar.google.com/citations?user=2Y5HWYsAAAAJ&hl=en" target="_blank"><img src="images/scholar.png" alt="Google Scholar"></a></td>
+        <td><a href="https://scholar.google.com/citations?user=2Y5HWYsAAAAJ&hl=en" target="_blank"><img src="images/scholar.png" style="width:32px; height:32px;" alt="Google Scholar"></a></td>
         <td width="10">&nbsp;</td>
-        <td><a href="https://www.linkedin.com/in/mitchell-b-slapik-52444a247/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a></td>
+        <td><a href="https://www.linkedin.com/in/mitchell-b-slapik-52444a247/" target="_blank"><img src="images/linkedin.png" style="width:32px; height:32px;" alt="LinkedIn"></a></td>
       </tr>
     </table>
+    <br>
   </footer>
 
   <script>
